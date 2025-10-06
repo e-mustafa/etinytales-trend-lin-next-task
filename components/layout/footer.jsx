@@ -121,11 +121,11 @@ export default function Footer() {
 					</ul>
 				</div>
 
-				<div className='col-span-2 flex flex-col gap-6 text-white'>
+				<div className='col-span-2 flex flex-col gap-6 text-white -mt-3 md:mt-0'>
 					<h5 className='md:text-2xl font-semibold'>Send Email</h5>
 
 					<form>
-						<div className='flex items-center gap-2 sm:gap-3 bg-white rounded-[12px] p-1.5 md:p-2'>
+						<div className='flex items-center gap-2 sm:gap-3 bg-white rounded-[12px] p-1.5 md:p-2 border-[0.5px] border-black/10'>
 							<div className='w-full'>
 								<label htmlFor='hero-input' className='sr-only'>
 									Subscribe
@@ -144,7 +144,7 @@ export default function Footer() {
 						</div>
 					</form>
 
-					<div className='grid gap-3'>
+					<div className='grid gap-3 -mt-1 md:mt-0'>
 						<h6 className='font-semibold'>Follow Us</h6>
 						<div className='flex gap-4 items-center'>
 							<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>

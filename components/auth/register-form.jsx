@@ -85,7 +85,14 @@ export default function RegisterForm() {
 			</div>
 
 			<Button type='submit' disabled={isPending} className='w-full'>
-				{isPending ? 'Signing up...' : 'Sign up'}
+				{isPending ? (
+					<>
+						<Loader2Icon className='animate-spin size-5' />
+						<span>Signing up...</span>
+					</>
+				) : (
+					'Sign up'
+				)}
 			</Button>
 		</form>
 	);

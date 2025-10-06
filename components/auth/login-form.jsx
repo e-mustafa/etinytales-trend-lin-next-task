@@ -48,7 +48,14 @@ export default function LoginForm() {
 			</div>
 
 			<Button type='submit' disabled={isPending} className='w-full'>
-				{isPending ? 'Logging in...' : 'Login'}
+				{isPending ? (
+					<>
+						<Loader2Icon className='animate-spin size-5' />
+						<span>Logging in...</span>
+					</>
+				) : (
+					'Login'
+				)}
 			</Button>
 		</form>
 	);

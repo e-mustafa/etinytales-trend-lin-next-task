@@ -16,17 +16,19 @@ export default async function DashboardLayout({ children }) {
 
 	return (
 		<div className='min-h-screen'>
-			<header className='p-4 border-b flex items-center justify-between'>
-				<div className='text-lg font-bold'>Dashboard</div>
-				{user && (
-					<>
-						<p>Welcome "<strong>{user?.name}</strong>" to the dashboard</p>
+			<header className='p-4 border-b flex flex-col justify-between gap-3'>
+				<div className='flex items-center justify-between gap-2'>
+					<div className='text-lg font-bold'>Dashboard</div>
+					{user && (
 						<div className='flex items-center gap-2'>
 							<img src={user.image} alt={user.name} className='w-8 h-8 rounded-full border' />
 							<span>{user.name}</span>
 						</div>
-					</>
-				)}
+					)}
+				</div>
+				<p className='self-center'>
+					Welcome "<strong>{user?.name}</strong>" to the dashboard
+				</p>
 			</header>
 			<main>{children}</main>
 		</div>

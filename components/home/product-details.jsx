@@ -46,7 +46,7 @@ export default function ProductDetails() {
 							</svg>
 						</div>
 					</div>
-					<div className='grid grid-cols-3 gap-2'>
+					<div className='grid grid-cols-3 gap-1.5 md:gap-2'>
 						<div className='bg-[#F5F5F5] rounded-3xl py-5 px-3.5'>
 							<img src='/images/product-1.png' alt='product' className='size-full' />
 						</div>
@@ -216,7 +216,7 @@ export default function ProductDetails() {
 						</div>
 					</div>
 
-					<div className='flex flex-col md:flex-row gap-4 md:justify-between mt-4'>
+					<div className='flex flex-col md:flex-row gap-6 md:justify-between md:mt-4'>
 						<div className='grid gap-4'>
 							<label htmlFor='Colors' className='flex gap-2 items-center md:text-xl font-medium text-[#020202]'>
 								Quantity
@@ -268,7 +268,7 @@ export default function ProductDetails() {
 					</div>
 				</div>
 			</div>
-			<div className='-mt-2 relative -z-10'>
+			<div className='-mt-2 relative -z-10 hidden md:block'>
 				<img src='/images/icon-light.svg' alt='logo' />
 			</div>
 		</section>

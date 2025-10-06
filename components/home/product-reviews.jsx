@@ -4,7 +4,7 @@ export default function ProductReviews() {
 	return (
 		//  Reviews Section
 		<section className='section-container pt-6 md:pt-16 pb-9'>
-			<div className='relative mb-6'>
+			<div className='relative mb-[26px] md:mb-5'>
 				<div className='absolute bottom-0 start-0 -z-10 md:hidden'>
 					<img src='/images/icon-light.svg' alt='logo' className='w-[59px] h-[37px]' />
 				</div>
@@ -61,11 +61,14 @@ export default function ProductReviews() {
 			</div>
 
 			{/* <!-- Reviews List --> */}
-			<div className='mt-16 flex flex-col gap-8'>
+			<div className='mt-10 md:mt-16 flex flex-col gap-5 md:gap-8'>
 				{Array.from({ length: 4 }).map((_, i) => (
-					<div key={i} className='flex flex-col gap-4 not-last-of-type:border-bnot-last-of-type:pb-8'>
+					<div
+						key={i}
+						className='flex flex-col gap-2 md:gap-4 not-last-of-type:border-b not-last-of-type:pb-5 not-last-of-type:md:pb-8'
+					>
 						<div className='flex items-center justify-between gap-4'>
-							<div className='font-semibold flex items-center gap-4'>
+							<div className='font-semibold flex items-center gap-2 md:gap-4'>
 								<p className='text-black text-sm md:text-xl'>Alex Daewn</p>
 								<span className='flex items-center gap-1'>
 									{Array.from({ length: 4 }).map((_, i) => (
@@ -101,7 +104,9 @@ export default function ProductReviews() {
 						</p>
 					</div>
 				))}
-				<button className='flex gap-2 mx-auto bg-[#F5F5F5] rounded-lg p-4 text-primary'>View More Comments</button>
+				<button className='flex gap-2 mx-auto bg-[#F5F5F5] rounded-lg p-4 text-primary font-semibold'>
+					View More Comments
+				</button>
 			</div>
 			<div className='-mt-20 relative -z-10 hidden md:block'>
 				<img src='/images/icon-light.svg' alt='logo' />

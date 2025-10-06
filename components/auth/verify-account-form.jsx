@@ -36,7 +36,7 @@ export default function VerifyAccountForm() {
 				{isPending ? (
 					<>
 						<Loader2Icon className='animate-spin size-5' />
-						<span>'verifying...'</span>
+						<span>verifying...</span>
 					</>
 				) : (
 					'Verify'
