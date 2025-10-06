@@ -7,6 +7,7 @@ import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Label } from '../ui/label';
 import FieldError from './field-error';
+import { Loader2Icon } from 'lucide-react';
 
 const initialState = { errors: {} };
 export default function LoginForm() {
