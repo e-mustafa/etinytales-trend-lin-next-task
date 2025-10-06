@@ -17,8 +17,8 @@ export default function ProductDetails() {
 
 						<img src='/images/young-adult-man-wearing-hoodie-beanie 1.png' alt='product-details' className='mx-auto' />
 
-						<div className='size-12 bg-[#BE968E] grid place-items-center absolute top-1/2 end-5 -translate-y-1/2 z-10 rounded-full'>
-							<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+						<div className='size-8 md:size-12 [&>svg]:size-[13px] md:[&>svg]:size-5 bg-[#BE968E] grid place-items-center absolute top-1/2 end-[13px] md:end-5 -translate-y-1/2 z-10 rounded-full'>
+							<svg viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
 								<path
 									fillRule='evenodd'
 									clipRule='evenodd'
@@ -28,8 +28,8 @@ export default function ProductDetails() {
 							</svg>
 						</div>
 
-						<div className='size-12 bg-[#C4C4C4] grid place-items-center absolute top-1/2 start-5 -translate-y-1/2 z-10 rounded-full'>
-							<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+						<div className='size-8 md:size-12 [&>svg]:size-[13px] md:[&>svg]:size-5 bg-[#C4C4C4] grid place-items-center absolute top-1/2 start-[13px] md:start-5 -translate-y-1/2 z-10 rounded-full'>
+							<svg viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
 								<g clipPath='url(#clip0_1_551)'>
 									<path
 										fillRule='evenodd'
@@ -57,7 +57,7 @@ export default function ProductDetails() {
 
 						<div className='bg-[#F5F5F5] rounded-3xl py-5 px-3.5 relative'>
 							<img src='/images/product-3.png' alt='product' className='size-full' />
-							<div className='absolute top-0 start-0 z-20 size-full bg-black/70 text-white rounded-3xl grid place-items-center font-semibold text-[32px]'>
+							<div className='absolute top-0 start-0 z-20 size-full bg-black/70 text-white rounded-3xl grid place-items-center font-semibold text-[22px] md:text-[32px]'>
 								+2
 							</div>
 						</div>
@@ -135,10 +135,10 @@ export default function ProductDetails() {
 							<p className='text-[#020202] text-xl font-medium'>$300.00</p>
 							<p className='text-[#8A8A8A] line-through '>$360.00</p>
 						</div>
-						<p className='text-[#333333]'>This price is exclusive of taxes.</p>
+						<p className='text-[#333333] text-xs md:text-base'>This price is exclusive of taxes.</p>
 					</div>
 
-					<p className='text-[#020202] text-xs md:text-sm'>
+					<p className='text-[#020202] text-xs md:text-sm my-1'>
 						Lorem ipsum dolor sit , consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, diam
 						nonummy
 					</p>

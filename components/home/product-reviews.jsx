@@ -4,9 +4,14 @@ export default function ProductReviews() {
 	return (
 		//  Reviews Section
 		<section className='section-container pt-6 md:pt-16 pb-9'>
-			<h5 className='relative font-semibold mb-5 md:text-2xl text-[#020202] after:content-[""] after:w-10 after:h-1 after:bg-primary after:absolute after:-bottom-2 after:start-0 after:rounded-full'>
-				Rating & Reviews
-			</h5>
+			<div className='relative mb-6'>
+				<div className='absolute bottom-0 start-0 -z-10 md:hidden'>
+					<img src='/images/icon-light.svg' alt='logo' className='w-[59px] h-[37px]' />
+				</div>
+				<h5 className='relative font-semibold md:text-2xl text-[#020202] after:content-[""] after:w-10 after:h-1 after:bg-primary after:absolute after:-bottom-2 after:start-0 after:rounded-full'>
+					Rating & Reviews
+				</h5>
+			</div>
 
 			<div className='grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8'>
 				{/* <!-- Rating Stats --> */}
@@ -98,7 +103,7 @@ export default function ProductReviews() {
 				))}
 				<button className='flex gap-2 mx-auto bg-[#F5F5F5] rounded-lg p-4 text-primary'>View More Comments</button>
 			</div>
-			<div className='-mt-20 relative -z-10'>
+			<div className='-mt-20 relative -z-10 hidden md:block'>
 				<img src='/images/icon-light.svg' alt='logo' />
 			</div>
 		</section>

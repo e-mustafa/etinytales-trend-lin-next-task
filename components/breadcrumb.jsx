@@ -25,7 +25,7 @@ export default function Breadcrumb() {
 							className='flex items-center text-sm text-[#020202] hover:text-blue-600 focus:outline-hidden focus:text-blue-600'
 							href='#'
 						>
-							App Center
+							Our Category
 							<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
 								<path
 									d='M10 5.63637L16.3636 12L10 18.3636'
@@ -38,7 +38,7 @@ export default function Breadcrumb() {
 						</a>
 					</li>
 					<li className='inline-flex items-center text-sm font-semibold text-[#8A8A8A] truncate' aria-current='page'>
-						Application
+						Product Details
 					</li>
 				</ol>
 			</div>

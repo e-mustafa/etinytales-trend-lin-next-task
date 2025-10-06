@@ -34,9 +34,15 @@ const similarItems = [
 export default function SimilarItems() {
 	return (
 		<section className='pt-6 md:pt-16 pb-9 relative w-screen max-w-full pl-5 md:pl-[calc(((100vw-theme(maxWidth.7xl))/2)+40px)]'>
-			<h5 className='relative font-semibold md:text-2xl text-[#020202] mb-[38px] after:content-[""] after:w-10 after:h-1 after:bg-primary after:absolute after:-bottom-2 after:start-0 after:rounded-full'>
-				Similar Items
-			</h5>
+			<div className='relative mb-[38px]'>
+				<div className='absolute bottom-0 start-0 -z-10 md:hidden'>
+					<img src='/images/icon-light.svg' alt='logo' className='w-[59px] h-[37px]' />
+				</div>
+				<h5 className='relative font-semibold md:text-2xl text-[#020202] after:content-[""] after:w-10 after:h-1 after:bg-primary after:absolute after:-bottom-2 after:start-0 after:rounded-full'>
+					Similar Items
+				</h5>
+			</div>
+
 			<div className='w-full overflow-x-auto touch-pan-x snap-x snap-mandatory scroll-smooth hide-scrollbar'>
 				<div className='flex gap-[9px] md:gap-4'>
 					{/* products elements */}
@@ -110,7 +116,7 @@ export default function SimilarItems() {
 										alt='product-name'
 										width={200}
 										height={200}
-										className='shrink-0  mx-auto h-full'
+										className='mx-auto h-full aspect-square object-contain px-4 md:px-0'
 									/>
 								</div>
 							</div>
@@ -148,7 +154,7 @@ export default function SimilarItems() {
 			</div>
 
 			<div className='flex items-center justify-center gap-3 mt-8'>
-				<div className='size-12 bg-[#C4C4C4] grid place-items-center rounded-full'>
+				<div className='size-[50px] bg-[#C4C4C4] grid place-items-center rounded-full [&_svg]:size-6'>
 					<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
 						<g clipPath='url(#clip0_1_551)'>
 							<path
@@ -165,12 +171,12 @@ export default function SimilarItems() {
 						</defs>
 					</svg>
 				</div>
-				<div className='size-12 bg-[#BE968E] grid place-items-center rounded-full'>
-					<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+				<div className='size-[50px] bg-[#BE968E] grid place-items-center rounded-full [&_svg]:size-6'>
+					<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
 						<path
 							fillRule='evenodd'
 							clipRule='evenodd'
-							d='M13.0891 9.41086C13.2454 9.56713 13.3331 9.77906 13.3331 10C13.3331 10.221 13.2454 10.4329 13.0891 10.5892L8.37498 15.3034C8.21781 15.4552 8.0073 15.5392 7.78881 15.5373C7.57031 15.5354 7.3613 15.4477 7.20679 15.2932C7.05229 15.1387 6.96465 14.9297 6.96275 14.7112C6.96085 14.4927 7.04484 14.2822 7.19664 14.125L11.3216 10L7.19664 5.87503C7.04484 5.71786 6.96085 5.50736 6.96275 5.28886C6.96464 5.07036 7.05229 4.86135 7.20679 4.70685C7.3613 4.55234 7.57031 4.4647 7.78881 4.4628C8.0073 4.4609 8.21781 4.5449 8.37497 4.6967L13.0891 9.41086Z'
+							d='M15.707 11.2929C15.8944 11.4805 15.9998 11.7348 15.9998 11.9999C15.9998 12.2651 15.8944 12.5194 15.707 12.7069L10.05 18.3639C9.86137 18.5461 9.60876 18.6469 9.34657 18.6446C9.08437 18.6423 8.83356 18.5372 8.64815 18.3518C8.46274 18.1663 8.35757 17.9155 8.35529 17.6533C8.35302 17.3911 8.45381 17.1385 8.63597 16.9499L13.586 11.9999L8.63597 7.04994C8.45381 6.86133 8.35302 6.60873 8.3553 6.34653C8.35757 6.08434 8.46274 5.83353 8.64815 5.64812C8.83356 5.46271 9.08437 5.35754 9.34657 5.35526C9.60876 5.35298 9.86137 5.45378 10.05 5.63594L15.707 11.2929Z'
 							fill='white'
 						/>
 					</svg>
